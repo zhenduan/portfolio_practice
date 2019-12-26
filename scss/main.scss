@@ -1,0 +1,413 @@
+// Variables
+$website-width: 1280px;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url("../img/showcase.jpg");
+$body-bg-color: #fff;
+$font-stack: "Dosis", sans-serif;
+
+@import "utilities";
+@import "work";
+
+// Core Styling - General Styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-stack;
+  line-height: 1.6;
+  background: $body-bg-color;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+// Logo
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+// Main Nav
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+//  Header - Home Header & Inner Header
+#header {
+  &-home {
+    background: $bg-image no-repeat center right / cover;
+    height: 100vh;
+    color: #fff;
+
+    .header-content {
+      text-align: center;
+      padding-top: 20%;
+
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  &-inner {
+    background: $bg-image no-repeat 20% 30% / cover;
+    height: 5.5rem;
+  }
+}
+
+// Bottom-line
+.bottom-line {
+  border-bottom: 2px solid $main-color;
+  width: 3rem;
+  margin: 5px auto;
+}
+
+// Home Content - Section A
+#home {
+  &-a {
+    .specials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1rem;
+
+      .fas {
+        color: $main-color;
+      }
+    }
+  }
+
+  //   Home Section B
+  &-b {
+    .stats {
+      display: grid;
+      padding: 3rem 0;
+      grid-template-columns: repeat(4, 1fr);
+
+      li {
+        line-height: 2;
+        &.stats-title {
+          font-size: 1.5rem;
+        }
+        &.stats-number {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+
+      div:nth-child(odd) {
+        background: $light-color;
+        padding: 4rem 0;
+      }
+
+      div:nth-child(even) {
+        background: $medium-color;
+        padding: 4rem 0;
+      }
+    }
+  }
+
+  //   Home Section C
+  &-c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.5rem;
+      text-align: center;
+
+      &-icon {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: $dark-color;
+        color: #fff;
+        padding: 2rem;
+        line-height: 70px;
+        position: relative;
+        transition: all 1s;
+
+        &:hover {
+          background: $main-color;
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+
+          .process-step {
+            background: $dark-color;
+          }
+        }
+      }
+
+      &-step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 28px;
+        background: $main-color;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        line-height: 15px;
+        padding: 1rem;
+        transition: all 1s;
+      }
+    }
+  }
+}
+
+// Footer
+#main-footer {
+  background: $dark-color;
+  color: #fff;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+
+    .fab {
+      width: 15px;
+      height: 15px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      padding: 1rem;
+      margin: 5px;
+
+      &:hover {
+        background: $main-color;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+// About Page - Section A
+#about-a {
+  .about-info {
+    display: grid;
+    grid-template-areas:
+      "bioimg bio bio"
+      "aw1 aw2 aw3";
+    grid-gap: 1.2rem;
+  }
+
+  //   grid Area
+  .bio-image {
+    grid-area: bioimg;
+  }
+
+  .bio {
+    grid-area: bio;
+    border-left: 3px solid $main-color;
+    background: $light-color;
+    padding: 0.75rem;
+  }
+
+  .award-1,
+  .award-2,
+  .award-3 {
+    i {
+      color: $main-color;
+    }
+  }
+}
+
+// About Section B
+#about-b {
+  color: #fff;
+
+  .section-title {
+    text-align: center;
+  }
+
+  .progress {
+    height: 20px;
+    background: $medium-color;
+    border-radius: 5px;
+    margin-bottom: 0.6rem;
+
+    div {
+      background: $main-color;
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+}
+
+// About Section C
+#about-c {
+  background: $light-color;
+
+  .about-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.2rem;
+
+    img {
+      width: 180px;
+    }
+  }
+}
+
+// Section D TESTIMONIALS
+#about-d {
+  h2 {
+    text-align: center;
+  }
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.75rem;
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    p {
+      border: solid 1px $medium-color;
+      border-radius: 10px;
+      padding: 0.75rem;
+    }
+
+    ul {
+      display: flex;
+      //   justify-content: center;
+      align-items: center;
+
+      li {
+        img {
+          padding-right: 0.25rem;
+          margin-top: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+// Contact Page Contact-a
+#contact {
+  &-a {
+    .text-fields {
+      display: grid;
+      grid-template-areas:
+        "name email"
+        "subject phone"
+        "msg msg";
+
+      .name-input {
+        grid-area: name;
+      }
+
+      .email-input {
+        grid-area: email;
+      }
+      .email-input {
+        grid-area: email;
+      }
+
+      .phone-input {
+        grid-area: phone;
+      }
+
+      .message-input {
+        grid-area: msg;
+      }
+
+      grid-gap: 1rem;
+    }
+
+    input {
+      padding: 0.5rem 1rem;
+    }
+
+    textarea {
+      padding: 0.5rem 0.5rem;
+      height: 130px;
+    }
+
+    button {
+      width: 30%;
+      border-radius: 5px;
+    }
+  }
+
+  // Contact Info
+  &-b {
+    background: $dark-color;
+
+    .contact-info {
+      color: #fff;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &-c {
+    background: $main-color;
+    color: #fff;
+    height: 9.5rem;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
+@import "media";

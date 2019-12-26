@@ -1,0 +1,186 @@
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 10%;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  #about-c {
+    .about-logos {
+      img {
+        width: 130px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  // Nav
+  #main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // Header Inner
+  #header-inner {
+    height: 10rem;
+  }
+
+  // About - Section A
+  #about-a {
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        "bioimg"
+        "bio"
+        "aw1"
+        "aw2"
+        "aw3";
+    }
+  }
+
+  // About - Logos
+  #about-c {
+    display: none;
+  }
+
+  // About D - TESTIMONIALS
+
+  #about-d {
+    .testimonials {
+      display: block;
+    }
+  }
+
+  // Work
+  #work-a {
+    .items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // Contact
+  #contact-a {
+    .text-fields {
+      grid-template-areas:
+        "name "
+        "subject"
+        "email"
+        "phone"
+        "msg";
+    }
+  }
+
+  // Contact B - Contact Info
+  #contact-b {
+    .contact-info {
+      grid-template-columns: repeat(1, 1fr);
+
+      div {
+        border-bottom: 1px solid $medium-color;
+
+        i {
+          padding-top: 1rem;
+        }
+
+        p {
+          padding-bottom: 1rem;
+        }
+      }
+
+      div:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  // Contact C
+  #contact-c {
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+
+  // Specials
+  #home {
+    &-a {
+      .specials {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        div {
+          border-bottom: 1px solid rgba($color: $medium-color, $alpha: 0.6);
+
+          p {
+            margin-bottom: 10px;
+          }
+        }
+        div:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  // Stats
+  #home-b {
+    .stats {
+      padding: 0rem 0;
+      grid-template-columns: repeat(1, 1fr);
+
+      div:nth-child(odd) {
+        padding: 1.5rem 0;
+      }
+
+      div:nth-child(even) {
+        padding: 1.5rem 0;
+      }
+    }
+  }
+
+  // Process
+  #home-c {
+    .process {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // Footer
+  #main-footer {
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    p {
+      margin-bottom: 0.55rem;
+    }
+  }
+
+  #header-home {
+    height: 9.5rem;
+
+    .header-content {
+      display: none;
+    }
+  }
+}
+
+// Landscape
+@media (max-height: 450px) {
+  #header-home {
+    .header-content {
+      padding-top: 10%;
+    }
+  }
+}
