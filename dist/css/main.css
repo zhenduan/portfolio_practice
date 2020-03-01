@@ -19,7 +19,7 @@
 
 .btn-main {
   color: #333;
-  background-color: #ffbc00; }
+  background-color: #517BB2; }
 
 .btn-light {
   color: #333;
@@ -32,7 +32,7 @@
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: #ffbc00; }
+  background-color: #517BB2; }
 
 .lead {
   font-size: 1.3rem;
@@ -97,7 +97,7 @@ input[class^="btn-"]:hover {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: rgba(255, 188, 0, 0.9); }
+  background-color: rgba(81, 123, 178, 0.9); }
 
 .item:hover .overlay {
   opacity: 1; }
@@ -118,7 +118,7 @@ input[class^="btn-"]:hover {
   padding: 0; }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: "PT Sans", sans-serif;
   line-height: 1.6;
   background: #fff; }
 
@@ -161,7 +161,7 @@ img {
     #main-nav a:hover {
       border-color: #ccc; }
     #main-nav a.current {
-      border-color: #ffbc00; }
+      border-color: #517BB2; }
 
 #header-home {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
@@ -179,7 +179,7 @@ img {
   height: 5.5rem; }
 
 .bottom-line {
-  border-bottom: 2px solid #ffbc00;
+  border-bottom: 2px solid #517BB2;
   width: 3rem;
   margin: 5px auto; }
 
@@ -188,7 +188,7 @@ img {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem; }
   #home-a .specials .fas {
-    color: #ffbc00; }
+    color: #517BB2; }
 
 #home-b .stats {
   display: grid;
@@ -224,7 +224,7 @@ img {
     position: relative;
     transition: all 1s; }
     #home-c .process-icon:hover {
-      background: #ffbc00;
+      background: #517BB2;
       width: 90px;
       height: 90px;
       line-height: 90px; }
@@ -235,7 +235,7 @@ img {
     top: 0;
     right: 0;
     font-size: 28px;
-    background: #ffbc00;
+    background: #517BB2;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -259,7 +259,7 @@ img {
       padding: 1rem;
       margin: 5px; }
       #main-footer .footer-content .fab:hover {
-        background: #ffbc00;
+        background: #517BB2;
         transition: all 0.5s; }
 
 #about-a .about-info {
@@ -272,14 +272,14 @@ img {
 
 #about-a .bio {
   grid-area: bio;
-  border-left: 3px solid #ffbc00;
+  border-top: 9px solid #517BB2;
   background: #f4f4f4;
   padding: 0.75rem; }
 
 #about-a .award-1 i,
 #about-a .award-2 i,
 #about-a .award-3 i {
-  color: #ffbc00; }
+  color: #517BB2; }
 
 #about-b {
   color: #fff; }
@@ -291,7 +291,7 @@ img {
     border-radius: 5px;
     margin-bottom: 0.6rem; }
     #about-b .progress div {
-      background: #ffbc00;
+      background: #517BB2;
       height: 100%;
       border-radius: 5px; }
 
@@ -363,7 +363,7 @@ img {
     text-align: center; }
 
 #contact-c {
-  background: #ffbc00;
+  background: #517BB2;
   color: #fff;
   height: 9.5rem; }
   #contact-c h1 {

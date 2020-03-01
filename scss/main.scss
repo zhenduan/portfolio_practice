@@ -1,12 +1,12 @@
 // Variables
 $website-width: 1280px;
-$main-color: #ffbc00;
+$main-color: #517BB2;
 $light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #333;
 $bg-image: url("../img/showcase.jpg");
 $body-bg-color: #fff;
-$font-stack: "Dosis", sans-serif;
+$font-stack: 'PT Sans', sans-serif;
 
 @import "utilities";
 @import "work";
@@ -249,7 +249,7 @@ img {
 
   .bio {
     grid-area: bio;
-    border-left: 3px solid $main-color;
+    border-top: 9px solid $main-color;
     background: $light-color;
     padding: 0.75rem;
   }
