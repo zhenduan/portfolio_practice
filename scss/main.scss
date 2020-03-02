@@ -250,6 +250,7 @@ img {
   .bio {
     grid-area: bio;
     border-top: 9px solid $main-color;
+    border-bottom: 9px solid $main-color;
     background: $light-color;
     padding: 0.75rem;
   }
