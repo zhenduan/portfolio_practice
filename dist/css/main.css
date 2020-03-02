@@ -137,6 +137,12 @@ h4 {
 img {
   width: 100%; }
 
+.title-lines {
+  border-left: 4px #517BB2 solid;
+  border-right: 4px #517BB2 solid;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
 #logo {
   width: 70px;
   height: 70px;
@@ -155,8 +161,8 @@ img {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    border-bottom: 3px transparent solid;
-    padding-bottom: 0.5rem;
+    border-left: 3px transparent solid;
+    padding-left: 0.5rem;
     transition: border-color 0.5s; }
     #main-nav a:hover {
       border-color: #ccc; }
@@ -272,7 +278,6 @@ img {
 
 #about-a .bio {
   grid-area: bio;
-  border-top: 9px solid #517BB2;
   border-bottom: 9px solid #517BB2;
   background: #f4f4f4;
   padding: 0.75rem; }

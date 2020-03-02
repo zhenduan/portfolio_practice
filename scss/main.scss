@@ -42,6 +42,14 @@ img {
   width: 100%;
 }
 
+.title-lines{
+  border-left: 4px $main-color solid;
+  border-right: 4px $main-color solid;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+}
+
 // Logo
 #logo {
   width: 70px;
@@ -68,8 +76,8 @@ img {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    border-bottom: 3px transparent solid;
-    padding-bottom: 0.5rem;
+    border-left: 3px transparent solid;
+    padding-left: 0.5rem;
     transition: border-color 0.5s;
 
     &:hover {
@@ -249,7 +257,7 @@ img {
 
   .bio {
     grid-area: bio;
-    border-top: 9px solid $main-color;
+    // border-top: 9px solid $main-color;
     border-bottom: 9px solid $main-color;
     background: $light-color;
     padding: 0.75rem;
